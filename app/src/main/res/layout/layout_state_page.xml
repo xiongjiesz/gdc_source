@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_state_page_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f5f5f5"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--1.图片-->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_state_page_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        tools:src="@mipmap/img_state_empty"/>
+
+    <!--2.网络提示-->
+    <TextView
+        android:id="@+id/tv_state_page_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp7"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/sp12"
+        tools:text="网络君不见了，请稍候再试"/>
+
+    <!--3.操作提示-->
+    <TextView
+        android:id="@+id/tv_state_page_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp4"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/sp12"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="请稍候重新尝试吧～"/>
+
+    <!--4.操作-->
+    <Button
+        android:id="@+id/btn_state_page_option"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/code_btn_state_page"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        tools:text="Tab to retry"
+        tools:visibility="visible"
+        />
+
+</LinearLayout>

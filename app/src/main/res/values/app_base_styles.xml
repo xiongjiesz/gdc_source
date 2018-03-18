@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 页面基类UI 的标题栏文字的样式  -->
+    <style name="BasePageTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">10</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/c_ffffff</item>
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="BasePageMarginToolbar">
+        <item name="android:layout_marginTop">@dimen/dp46</item>
+    </style>
+
+    <style name="BasePageConnStatusStyle" parent="BasePageMarginToolbar">
+        <item name="android:background">@color/base_bg_conn_status</item>
+        <item name="android:drawableLeft">@mipmap/net_connect</item>
+        <item name="android:drawableRight">@mipmap/arrow_img</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp5</item>
+        <item name="android:textColor">@color/base_text_conn_status</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:text">@string/connection_warn</item>
+    </style>
+</resources>

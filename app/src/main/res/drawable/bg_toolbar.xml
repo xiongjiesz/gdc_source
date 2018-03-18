@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--底部边框线颜色层-->
+    <item>
+        <color android:color="@color/c_214d05" />
+    </item>
+    <!--填充色层-->
+    <item android:bottom="@dimen/px1">
+        <color android:color="@color/c_20241e" />
+    </item>
+
+</layer-list>

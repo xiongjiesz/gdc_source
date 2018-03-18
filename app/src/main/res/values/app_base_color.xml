@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_frame_bg">#ffffff</color>
+    <color name="base_title">#262626</color>
+    <color name="base_text_heavy">#333333</color>
+    <color name="base_bg_conn_status">#808080</color>
+    <color name="base_text_conn_status">#DDDDDE</color>
+</resources>

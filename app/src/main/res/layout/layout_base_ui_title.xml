@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_title_view"
+        style="@style/Widget.AppCompat.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp46"
+        android:background="@drawable/bg_toolbar"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        toolbar:navigationIcon="@mipmap/special_zone_back_click_img"
+        toolbar:title="@null">
+
+        <TextView
+            android:id="@+id/tv_title_subject"
+            style="@style/BasePageTitleStyle"
+            android:layout_gravity="center"
+            tools:text="页面标题"/>
+    </android.support.v7.widget.Toolbar>
+</merge>

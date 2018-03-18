@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.gdc.gdcmvp"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    /**1.引入文件夹中的依赖库**/
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    /**2.引入兼容依赖**/
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    /**3.约束布局**/
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    /**4.junit测试依赖**/
+    testImplementation 'junit:junit:4.12'
+    /**5.测试相关**/
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    /**6.引入Glide图片加载库**/
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    /**7.引入okhttp3.4.2**/
+    implementation files('libs/okhttp-3.4.2.jar')
+    /**8.引入okio-1.11.0.jar**/
+    implementation files('libs/okio-1.11.0.jar')
+    /**9.rxjava相关**/
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.5'
+    /**10.gson相关的包**/
+    implementation 'com.google.code.gson:gson:2.8.0'
+}

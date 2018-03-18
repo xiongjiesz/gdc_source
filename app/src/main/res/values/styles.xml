@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- 为了使用toolbar需要修改app的主题 -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- ActionBar's color -->
+        <item name="colorPrimary">@color/accent_material_dark</item>
+        <!-- StatusBar's color -->
+        <item name="colorPrimaryDark">@color/c_46b2ff</item>
+        <!-- Content default color -->
+        <item name="android:windowBackground">@color/dim_foreground_material_dark</item>
+        <!-- TODO bottom navi's color need to define in v21 -->
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+        <!-- To change the background of options menu-->
+        <item name="android:itemBackground">@drawable/bg_gray_btn_menu</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+
+</resources>

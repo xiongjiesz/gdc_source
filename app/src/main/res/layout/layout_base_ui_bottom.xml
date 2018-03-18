@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_base_ui_bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp46"
+    android:background="@color/base_frame_bg"
+    android:clickable="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <Button
+        android:id="@+id/btn_base_ui_ble_status"
+        android:layout_width="@dimen/dp26"
+        android:layout_height="@dimen/dp14"
+        android:layout_gravity="center"
+        android:background="@mipmap/device_not_connecting"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/tv_base_ui_ble_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp11"
+        android:clickable="false"
+        android:text="@string/device_disconntected"
+        android:textColor="@color/base_text_heavy"
+        android:textSize="@dimen/sp15"/>
+</LinearLayout>

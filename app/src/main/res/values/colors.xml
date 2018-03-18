@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 系统生成 begin -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 系统生成 end -->
+    <!-- 命名颜色 begin -->
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 命名颜色 end -->
+
+    <color name="c_dbdbdb">#dbdbdb</color>
+    <color name="c_ffffff">#ffffff</color>
+    <color name="c_f5f5f5">#f5f5f5</color>
+    <color name="c_f6f6f6">#f6f6f6</color>
+    <color name="c_666666">#666666</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_bbbbbb">#bbbbbb</color>
+    <color name="c_46b2ff">#46b2ff</color>
+
+    <!-- 文章列表颜色 begin -->
+    <color name="c_20241e">#20241e</color>
+    <color name="c_d7d4d3">#d7d4d3</color>
+    <color name="c_214d05">#214d05</color>
+    <!-- 文章列表颜色 end -->
+
+</resources>

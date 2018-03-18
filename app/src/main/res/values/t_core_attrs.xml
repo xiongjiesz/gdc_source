@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GifTextureView"><attr format="reference|string" name="gifSource"/><attr format="boolean" name="isOpaque"/></declare-styleable>
+    <declare-styleable name="GifView"><attr format="boolean" name="freezesAnimation"/></declare-styleable>
+
+    <declare-styleable name="SideBar">
+        <attr name="textColor" format="color" />
+        <attr name="selectedColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="selectedtextSize" format="dimension" />
+        <attr name="textpadding" format="dimension" />
+        <attr name="custom_background" format="reference" />
+        <attr name="showOverlay" format="boolean" />
+    </declare-styleable>
+</resources>

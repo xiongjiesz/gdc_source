@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BasePageStyle.Grey" parent="BasePageMarginToolbar">
+        <item name="android:background">@color/c_f6f6f6</item>
+    </style>
+    <style name="BasePageStyle.White" parent="BasePageMarginToolbar">
+        <item name="android:background">@color/c_ffffff</item>
+    </style>
+    <style name="BasePageStyle.Custom" parent="BasePageMarginToolbar">
+        <item name="android:background">@color/c_20241e</item>
+    </style>
+</resources>

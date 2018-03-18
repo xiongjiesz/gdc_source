@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_base_ui_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_frame_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- 设备连接提示 begin -->
+    <ViewStub
+        android:id="@+id/vs_base_ui_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout="@layout/layout_base_ui_bottom"/>
+    <!-- 设备连接提示 end -->
+
+    <!-- 页面内容区域 begin -->
+    <FrameLayout
+        android:id="@+id/fl_base_ui_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/vs_base_ui_bottom"/>
+    <!-- 页面内容区域 end -->
+
+    <!-- 页面状态区域 begin -->
+    <FrameLayout
+        android:id="@+id/fl_base_ui_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:background="#ff0"
+        tools:visibility="visible"/>
+    <!-- 页面状态区域 end -->
+
+    <!-- 页面标题区域 begin -->
+    <include layout="@layout/layout_base_ui_title"/>
+    <!-- 页面标题区域 end -->
+
+    <!-- 网络连接状态提示 begin -->
+    <TextView
+        android:id="@+id/tv_base_ui_connection"
+        style="@style/BasePageConnStatusStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+    <!-- 网络连接状态提示 end -->
+
+</RelativeLayout>
